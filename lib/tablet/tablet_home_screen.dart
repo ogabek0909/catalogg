@@ -2,6 +2,8 @@ import 'package:catalogg/desktop/widgets/desktop_slider_afisha_widget.dart';
 import 'package:catalogg/tablet/widgets/tablet_app_bar_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'widgets/teblet_footer_widget.dart';
+
 class TabletHomeScreen extends StatelessWidget {
   const TabletHomeScreen({super.key});
 
@@ -11,12 +13,12 @@ class TabletHomeScreen extends StatelessWidget {
       backgroundColor: Colors.amber,
       body: CustomScrollView(
         slivers: [
-          TableAppBarWidget(),
+          const TableAppBarWidget(),
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(10),
               child: Column(
-                children: [
+                children: const [
                   SizedBox(
                     height: 530,
                     child: SliderWidget(),
@@ -31,7 +33,10 @@ class TabletHomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
+          const SliverToBoxAdapter(
+            child: TabletFooterWidget(),
+          ),
         ],
       ),
     );
