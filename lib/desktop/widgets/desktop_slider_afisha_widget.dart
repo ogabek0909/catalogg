@@ -260,9 +260,10 @@ class _SliderWidgetState extends State<SliderWidget> {
             alignment: Alignment.centerLeft,
             child: Container(
               padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
-              decoration: BoxDecoration(
+              decoration:const BoxDecoration(
                 color: Colors.black26,
-                borderRadius: BorderRadius.circular(8),
+                // borderRadius: BorderRadius.circular(8),
+                shape: BoxShape.circle,
               ),
               child: IconButton(
                 onPressed: () {
@@ -280,10 +281,11 @@ class _SliderWidgetState extends State<SliderWidget> {
           Align(
             alignment: Alignment.centerRight,
             child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 5),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 5),
+              decoration: const BoxDecoration(
+                shape: BoxShape.circle,
                 color: Colors.black26,
-                borderRadius: BorderRadius.circular(8),
+                // borderRadius: BorderRadius.circular(8),
               ),
               child: IconButton(
                 onPressed: () {
