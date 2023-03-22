@@ -6,30 +6,33 @@ import 'package:provider/provider.dart';
 
 import '../mobile/widgets/mobile_category_item_widget.dart';
 
+import 'widgets/teblet_footer_widget.dart';
+
 class TabletHomeScreen extends StatelessWidget {
   const TabletHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final categories = Provider.of<HomeScreenProvider>(context,listen: false).allCategories;
+    final categories =
+        Provider.of<HomeScreenProvider>(context, listen: false).allCategories;
     return Scaffold(
       backgroundColor: Colors.white,
       body: CustomScrollView(
         slivers: [
-          TableAppBarWidget(),
+          const TableAppBarWidget(),
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.all(10),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 530,
                     child: SliderWidget(),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 530,
                     child: AfishaWidget(),
                   ),
@@ -47,7 +50,10 @@ class TabletHomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
+          const SliverToBoxAdapter(
+            child: TabletFooterWidget(),
+          ),
         ],
       ),
     );
