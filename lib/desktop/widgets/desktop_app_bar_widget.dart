@@ -1,5 +1,6 @@
 import 'package:catalogg/screens/login_screen.dart';
 import 'package:catalogg/screens/saved_product_screen.dart';
+import 'package:catalogg/screens/shopping_cart_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -118,7 +119,9 @@ class _DesktopAppBarWidgetState extends State<DesktopAppBarWidget> {
               Row(
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      context.goNamed(ShoppingCartScreen.routeName);
+                    },
                     icon: const Icon(
                       Icons.shopping_cart_outlined,
                       color: Colors.blue,
