@@ -19,6 +19,7 @@ class _MobileAppBarWidgetState extends State<MobileAppBarWidget> {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
+      automaticallyImplyLeading: false,
       expandedHeight: 100,
       flexibleSpace: FlexibleSpaceBar(
         background: Padding(

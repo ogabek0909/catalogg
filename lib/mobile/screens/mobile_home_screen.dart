@@ -1,7 +1,7 @@
 import 'package:catalogg/desktop/widgets/desktop_slider_afisha_widget.dart';
 import 'package:catalogg/mobile/widgets/mobile_app_bar_widget.dart';
+import 'package:catalogg/mobile/widgets/mobile_top_bar_widget.dart';
 import 'package:flutter/material.dart';
-import 'widgets/mobile_footer_widget.dart';
 
 class MobileHomeScreen extends StatelessWidget {
   const MobileHomeScreen({super.key});
@@ -35,7 +35,6 @@ class MobileHomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          const SliverToBoxAdapter(child: MobileFooterWidget(),)
         ],
       ),
     );

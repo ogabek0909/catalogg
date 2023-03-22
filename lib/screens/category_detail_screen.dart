@@ -1,4 +1,5 @@
 import 'package:catalogg/desktop/screens/desktop_category_detail_screen.dart';
+import 'package:catalogg/mobile/screens/mobile_category_detail_screen.dart';
 import 'package:catalogg/providers.dart/home_screen_provider.dart';
 import 'package:catalogg/responsive.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +26,7 @@ class CategoryDetailScreen extends StatelessWidget {
           );
         } else {
           return ResponsiveLayout(
-            mobile: Container(),
+            mobile: MobileCategoryDetailScreen(id: id),
             tablet: Container(),
             desktop: DesktopCategoryDetailScreen(id: id),
           );

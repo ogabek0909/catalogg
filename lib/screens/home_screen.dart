@@ -1,5 +1,5 @@
 import 'package:catalogg/desktop/screens/desktop_home_screen.dart';
-import 'package:catalogg/mobile/mobile_home_screen.dart';
+import 'package:catalogg/mobile/screens/mobile_home_screen.dart';
 import 'package:catalogg/providers.dart/home_screen_provider.dart';
 import 'package:catalogg/responsive.dart';
 import 'package:catalogg/tablet/tablet_home_screen.dart';

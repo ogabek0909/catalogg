@@ -7,6 +7,7 @@ import 'package:catalogg/screens/home_screen.dart';
 import 'package:catalogg/screens/login_screen.dart';
 import 'package:catalogg/screens/register_screen.dart';
 import 'package:catalogg/screens/saved_product_screen.dart';
+import 'package:catalogg/screens/shopping_cart_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
@@ -72,6 +73,11 @@ class MyApp extends StatelessWidget {
                 path: 'saved-products',
                 name: SavedProductScreen.routeName,
                 builder: (context, state) => const SavedProductScreen(),
+              ),
+              GoRoute(
+                path: 'shopping-cart',
+                name: ShoppingCartScreen.routeName,
+                builder: (context, state) => const ShoppingCartScreen(),
               ),
               GoRoute(
                 path: 'login',
