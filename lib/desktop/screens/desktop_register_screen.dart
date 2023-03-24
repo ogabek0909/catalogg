@@ -65,7 +65,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               controller: usernameController,
                               hintText: 'Ism*',
                               perfixIcon:
-                                  Icon(Icons.person, color: Colors.blue),
+                                  Icon(Icons.person, color: Colors.grey),
                             ),
                             TextFieldForm(
                               helperText: "Norpulatov",
@@ -78,7 +78,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               controller: surnameController,
                               hintText: 'Familiya*',
                               perfixIcon:
-                                  Icon(Icons.person, color: Colors.blue),
+                                  Icon(Icons.person, color: Colors.grey),
                             ),
                             TextFieldForm(
                               helperText: "Shoxnazarov o'g'li",
@@ -91,7 +91,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               controller: familyNameController,
                               hintText: 'Otasining ismi*',
                               perfixIcon:
-                                  Icon(Icons.person, color: Colors.blue),
+                                  Icon(Icons.person, color: Colors.grey),
                             ),
                             TextFieldForm(
                               helperText: "+998991234567",
@@ -104,7 +104,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               controller: phoneController,
                               hintText: 'Telefon raqam*',
                               perfixIcon:
-                                  Icon(Icons.local_phone, color: Colors.blue),
+                                  Icon(Icons.local_phone, color: Colors.green),
                             ),
                             TextFieldForm(
                               helperText: 'example@gmail.com',
@@ -116,7 +116,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               },
                               controller: emailController,
                               hintText: 'Elektron pochta*',
-                              perfixIcon: Icon(Icons.email, color: Colors.blue),
+                              perfixIcon: Icon(Icons.email, color: Colors.purple),
                             ),
                             TextFieldForm(
                               helperText: '12345678',
@@ -128,7 +128,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               },
                               controller: passwordController,
                               hintText: 'Parol*',
-                              perfixIcon: Icon(Icons.lock, color: Colors.blue),
+                              perfixIcon: Icon(Icons.lock, color: Colors.grey),
                             ),
                           ],
                         ),
@@ -139,7 +139,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               controller: siteController,
                               hintText: 'example.uz',
                               perfixIcon:
-                                  Icon(Icons.language, color: Colors.blue),
+                                  Icon(Icons.language, color: Colors.purple),
                             ),
                             TextFieldForm(
                               controller: telegramController,
@@ -152,7 +152,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               hintText: 'instagram.com',
                               perfixIcon: Icon(
                                 FontAwesomeIcons.instagram,
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 250, 4, 86),
                               ),
                             ),
                             TextFieldForm(
@@ -168,7 +168,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               hintText: 'youtube.com',
                               perfixIcon: Icon(
                                 FontAwesomeIcons.youtube,
-                                color: Colors.blue,
+                                color: Colors.red,
                               ),
                             ),
                             TextFieldForm(
@@ -176,7 +176,7 @@ class _DesktopRegisterScreenState extends State<DesktopRegisterScreen> {
                               hintText: 'wa.me',
                               perfixIcon: Icon(
                                 FontAwesomeIcons.whatsapp,
-                                color: Colors.blue,
+                                color: Colors.green,
                               ),
                             ),
                           ],
