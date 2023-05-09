@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class TextFieldForm extends StatelessWidget {
@@ -27,21 +29,12 @@ class TextFieldForm extends StatelessWidget {
         children: [
           Text(hintText),
           Container(
-            decoration: const BoxDecoration(
-              boxShadow: [
-                BoxShadow(
-                  color: Color.fromRGBO(187, 253, 252, 1),
-                  blurRadius: 20,
-                  offset: Offset(3, 7),
-                ),
-              ],
-            ),
             child: TextFormField(
               validator: validator,
               keyboardType: inputType,
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: Color.fromARGB(255, 248, 246, 246),
                 hintText: helperText,
                 // label: Text(
                 //   hintText,

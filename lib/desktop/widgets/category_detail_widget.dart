@@ -34,4 +34,5 @@ class CategoryDetailWidget extends StatelessWidget {
       ),
     );
   }
+  
 }
